@@ -20,9 +20,9 @@ export default function ProductDetail() {
             .finally(() => setLoading(false));
     }, [id])
 
-    if (loading) return <h3>Loading...</h3>
-
-    if (!product) return <h3>Product not found</h3>
+    if (loading) return <Typography variant='h3'>Loading...</Typography>
+    
+    if (!product) return <Typography variant='h3'>Product not found</Typography>
 
     return (
         <Grid container spacing={6}>
